@@ -15,12 +15,12 @@ import {
 } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDeu_IKN4Ptc-g3thNinylj0QubAKmN40E",
-  authDomain: "crwn-clothing-99da5.firebaseapp.com",
-  projectId: "crwn-clothing-99da5",
-  storageBucket: "crwn-clothing-99da5.appspot.com",
-  messagingSenderId: "866578135388",
-  appId: "1:866578135388:web:f7efe9015dca29a894a999",
+  apiKey: "AIzaSyD6MJMlOQ2hwJ9lPPT0IpvIOZs5Zts0md0",
+  authDomain: "website-clothes.firebaseapp.com",
+  projectId: "website-clothes",
+  storageBucket: "website-clothes.appspot.com",
+  messagingSenderId: "854287214379",
+  appId: "1:854287214379:web:05cc9b571ee05c7683476e"
   
 };
 
@@ -48,6 +48,8 @@ export const createUserDocumentFromAuth = async (userAuth) => {
   const userSnapshot = await getDoc(userDocRef);
   console.log(userSnapshot);
   console.log(userSnapshot.exists());
+  //snapshot work when i deleted the old database created new one.tryed to install npm install firebase.
+  //firebase settings - new database in production mode, enable sign in with google, get firebase config from firestore from your account, in rules add true and save
 };
 
 
