@@ -14,7 +14,9 @@ const App = () => {
         <Route path='auth' element={<Authentication />} />
       </Route>
     </Routes>
+      
   );
 };
 
+    
 export default App;
